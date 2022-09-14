@@ -13,4 +13,3 @@ void print_alphabet(void)
 		_putchar(i);
 	_putchar('\n');
 }
->>>>>>> 1ec4519b9de936eef8cc39b98d25c7caba08b317
