@@ -1,10 +1,28 @@
-#include <stdio.h>
-#include <string.h>
-int main()
+/**
+ * _strcat - concatenates two string together
+ * @src: Char[] to append to dest
+ * @dest: Char[] to be appended to
+ * Return: Always 0.
+ */
+
+char *_strcat(char *dest, char *src)
 {
-    char destination[] = "Hello ";
-    char source[] = "World!";
-    strcat(destination,source);
-    printf("Concatenated String: %s\n", destination);
-    return 0;
+	int i = 0;
+	int j = 0;
+
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+
+	while (src[j] != '\0')
+	{
+		dest[i] += src[j];
+		i++;
+		j++;
+	}
+
+	dest += '\0';
+
+	return (dest);
 }
