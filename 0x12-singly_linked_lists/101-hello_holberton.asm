@@ -9,4 +9,4 @@ main:
 	mov rdi,1
 	mov rsi, message
 	mov rdx, 17
-	syscal
+	syscall
